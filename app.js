@@ -16,3 +16,14 @@ function randomNum() {
     x.style.textAlign = "center"
     
 }
+
+
+function userNumber() {
+    let user = document.getElementById("getnumber").value;
+    let y = document.getElementById("userNumber");
+    y.innerHTML = user;
+    y.style.color = "white";
+    y.style.backgroundColor = "orange";
+    y.style.padding = "20px"
+    y.style.textAlign = "center"
+}
