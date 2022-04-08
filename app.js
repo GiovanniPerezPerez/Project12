@@ -14,7 +14,7 @@ function randomNum() {
     x.style.color = "white";
     x.style.padding = "20px"
     x.style.textAlign = "center"
-    
+    return ran;   
 }
 
 
@@ -26,4 +26,19 @@ function userNumber() {
     y.style.backgroundColor = "orange";
     y.style.padding = "20px"
     y.style.textAlign = "center"
+    return user;
+}
+
+
+function compareNumbers() {
+    let a  = userNumber()
+    let b = randomNum()
+
+    if (a != b) {
+        document.getElementById("compare").innerhtml "Numbers are not the same. Computer got " + b + ", and user got " + a;
+    
+    } else if (a == b) {
+        document.getElementById("compare").innerhtml "Numbers are the same. Computer got " + b + ", and user got " + a;
+    }
+
 }
